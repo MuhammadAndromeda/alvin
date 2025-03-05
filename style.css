@@ -562,6 +562,7 @@ nav button:hover{
     height: auto;
     margin-bottom: 20px;
     object-fit: cover;
+    background-color: #fff;
     border-radius: 30px;
     border: 5px solid #113B45;
 }
@@ -577,7 +578,7 @@ nav button:hover{
 }
 
 .cardcon .cardtle{
-    width: 60%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -588,9 +589,9 @@ nav button:hover{
 .cardtle h1{
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #D2F2FF;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -600,7 +601,7 @@ nav button:hover{
 }
 
 .cardtle p{
-    width: 100%;
+    width: 75%;
     height: auto;
     color: #9DB6C0;
     font-size: 1rem;
@@ -612,12 +613,17 @@ nav button:hover{
 .cardcon a{
     color: #3BEAEA;
     height: auto;
-    padding: 20px 23px;
-    border: 1px solid #3BEAEA;
+    padding: 20px 25px;
+    background-color: #134052;
     border-radius: 100%;
     text-align: center;
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-45deg);
+}
+
+.cardcon a:hover{
+    background: linear-gradient(-45deg, #134052, #12749B);
 }
