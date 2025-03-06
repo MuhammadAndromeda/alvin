@@ -49,7 +49,6 @@ nav img{
 nav .links{
     width: max-content;
     height: auto;
-    overflow: hidden;
     gap: 30px;
     display: flex;
     justify-content: center;
@@ -61,11 +60,15 @@ nav .links{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .links a:hover{
+    width: max-content;
+    padding: 5px 30px;
     color: #3BEAEA;
+    background-color: #1E556B;
+    border-radius: 100px;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -626,4 +629,198 @@ nav button:hover{
 
 .cardcon a:hover{
     background: linear-gradient(-45deg, #134052, #12749B);
+}
+
+.cv{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 80px 0;
+    background-color: #0D313F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv .top{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 50px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1{
+    color: #D2F2FF;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+h1 span{
+    color: #3BEAEA;
+}
+
+.top p{
+    width: 100%;
+    max-width: 100%;
+    color: #9DB6C0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cv .bottom{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom a{
+    color: #134052;
+    background-color: #3BEAEA;
+    border: none;
+    padding: 18px 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: nohemi;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.bottom a:hover{
+    background: linear-gradient(45deg, #134052, #12749B);
+    color: #3BEAEA;
+}
+
+.bottom button{
+    color: #3BEAEA;
+    background-color: #134052;
+    border: none;
+    padding: 18px 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: nohemi;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.bottom button:hover{
+    background: linear-gradient(45deg, #134052, #12749B);
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 70px 70px;
+    background-color: #09242F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .start{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.start .navig{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start .copy{
+    color: #566971;
+    font-size: 1.2rem;
+}
+
+.navig a{
+    color: #9DB6C0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.navig a:hover{
+    color: #3BEAEA;
+    font-weight: 600;
+}
+
+footer .end{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.end .icons{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i{
+    color: #42E8E0;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.end .kontak{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontak i{
+    color: #566971;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.kontak p{
+    color: #9DB6C0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
 }
