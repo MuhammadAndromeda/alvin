@@ -57,14 +57,17 @@ nav{
 .nav .links{
     width: max-content;
     height: auto;
-    gap: 30px;
+    gap: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .links a{
+    width: max-content;
+    padding: 5px 30px;
     color: #268B8B;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -72,13 +75,8 @@ nav{
 }
 
 .links a:hover{
-    width: max-content;
-    padding: 5px 30px;
     color: #3BEAEA;
     background-color: #1E556B;
-    border-radius: 100px;
-    font-size: 1.1rem;
-    font-weight: 600;
 }
 
 .links i{
@@ -254,12 +252,14 @@ nav button:hover{
 }
 
 .conhome h1{
+    animation: zoom 1s ease-in-out 0.5s forwards;
     color: #3BEAEA;
     font-size: 9rem;
     font-weight: 400;
     font-family: coolvetica;
     letter-spacing: 3px;
     line-height: 1;
+    transform: scale(0);
 }
 
 .conhome .lower{
@@ -282,6 +282,16 @@ nav button:hover{
     font-family: nohemi;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 700px) {
@@ -661,6 +671,7 @@ nav button:hover{
     width: 100%;
     height: auto;
     overflow: hidden;
+    background-color: #09242F;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -966,6 +977,60 @@ nav button:hover{
     background: linear-gradient(-45deg, #134052, #12749B);
 }
 
+@media (max-width: 700px) {
+    .works{
+        padding: 50px 0px;
+    }
+
+    .works .title{
+        padding: 20px 20px;
+    }
+    
+    .title h1{
+        font-size: 3rem;
+    }
+    
+    .title p{
+        font-size: 1rem;
+    }
+    
+    .cards{
+        padding: 10px 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .card .cardcon{
+        padding: 0 10px;
+    }
+    
+    .cardtle h1{
+        margin-bottom: 13px;
+        font-size: 2rem;
+    }
+
+    .cardtle p{
+        width: 100%;
+        font-size: 0.7rem;
+        font-weight: regular;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+    
+    .cardcon a{
+        color: #3BEAEA;
+        height: auto;
+        padding: 20px 25px;
+        background-color: #134052;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        transform: rotate(-45deg);
+    }
+}
+
 .cv{
     width: 100%;
     height: auto;
@@ -1053,6 +1118,57 @@ h1 span{
 .bottom button:hover{
     background: linear-gradient(45deg, #134052, #12749B);
     color: white;
+}
+
+@media (max-width: 700px) {
+    .cv{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding: 50px 0;
+        background-color: #0D313F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cv .top{
+        gap: 18px;
+    }
+    
+    .top h1{
+        width: 80%;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .top p{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
+    .cv .bottom{
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bottom a{
+        width: 80%;
+        padding: 18px 0px;
+        text-align: center;
+    }
+    
+    .bottom button{
+        width: 80%;
+        padding: 18px 0px;
+        text-align: center;
+    }
 }
 
 footer{
@@ -1149,7 +1265,6 @@ footer .end{
     color: #566971;
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 500;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1159,4 +1274,50 @@ footer .end{
     font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 700px) {
+    footer{
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .start .navig{
+        gap: 30px;
+    }
+    
+    .start .copy{
+        width: 100%;
+        color: #566971;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .navig a{
+        font-size: 1rem;
+    }
+    
+    .navig a:hover{
+        color: #3BEAEA;
+        font-weight: 600;
+    }
+    
+    footer .end{
+        margin-bottom: 10px;
+    }
+    
+    .end .icons{
+        width: 100%;
+    }
+
+    .icons i{
+        font-size: 3.5rem;
+    }
+
+    .end .kontak{
+        width: 100%;
+    }
 }
