@@ -10,15 +10,33 @@
 <body>
     <section class="home">
         <nav>
-            <img src="bahan/Logo.svg" alt="">
-            <div class="links">
+            <div class="nav">
+                <img src="bahan/Logo.svg" alt="">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Works</a>
+                </div>
+                <button>Get In Touch</button>
+                <i class="fa-solid fa-bars" id="bars" onclick="bars()"></i>
+            </div>
+        </nav>
+        <div class="short" id="short">
+            <div class="top">
+                <i class="fa-solid fa-xmark" onclick="cancel()"></i>
+                <img src="bahan/Logo.svg" alt="">
+            </div>
+            <div class="mid">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Skills</a>
                 <a href="#">Works</a>
             </div>
-            <button>Get In Touch</button>
-        </nav>
+            <div class="bot">
+                <button>Get In Touch</button>
+            </div>
+        </div>
         <div class="conhome">
             <div class="upper"><p>A Network Engineer</p></div>
             <h1>Portfolio</h1>
@@ -73,11 +91,12 @@
     <section class="experience">
         <div class="exbox">
             <div class="right">
-                <h1>Teaching <span>#1</span></h1>
-                <h2>SMPIT Arkan <br>Cendekia</h2>
+                <div class="rtitle">
+                    <h1>Teaching <span>#1</span></h1>
+                    <h2>SMPIT Arkan <br>Cendekia</h2>
+                </div>
+                <p>I became an MTCNA Trainer who taught about Network fundamentals to children at SMPIT Arkan Cendekia school on September 11-12, 2024.</p>
             </div>
-
-            <p>I became an MTCNA Trainer who taught about Network fundamentals to children at SMPIT Arkan Cendekia school on September 11-12, 2024.</p>
             
             <div class="left">
                 <a href="#">See Details</a>
@@ -87,11 +106,12 @@
 
         <div class="exbox" style="background-color: #123F51;">
             <div class="right">
-                <h1>Teaching <span>#2</span></h1>
-                <h2>SMPN 172 Jakarta</h2>
+                <div class="rtitle">
+                    <h1>Teaching <span>#2</span></h1>
+                    <h2>SMPN 172 Jakarta</h2>   
+                </div>
+                <p>I became an MTCNA Trainer who taught about Network fundamentals and some basic configurations to children at SMPN 172 Jakarta school on October 16-17, 2024.</p>
             </div>
-
-            <p>I became an MTCNA Trainer who taught about Network fundamentals and some basic configurations to children at SMPN 172 Jakarta school on October 16-17, 2024.</p>
             
             <div class="left">
                 <a href="#">See Details</a>
@@ -101,11 +121,12 @@
 
         <div class="exbox">
             <div class="right">
-                <h1>Teaching <span>#3</span></h1>
-                <h2>SMATQ Fajri Bogor</h2>
+                <div class="rtitle">
+                    <h1>Teaching <span>#3</span></h1>
+                    <h2>SMATQ Fajri Bogor</h2>
+                </div>
+                <p>I became an MTCNA Trainer who taught about Network fundamentals and some basic configurations to children at SMATQ Fajri Bogor school on Februari 3-5, 2024.</p>
             </div>
-
-            <p>I became an MTCNA Trainer who taught about Network fundamentals and some basic configurations to children at SMATQ Fajri Bogor school on Februari 3-5, 2024.</p>
             
             <div class="left">
                 <a href="#">See Details</a>
@@ -115,11 +136,12 @@
 
         <div class="exbox" style="background-color: #123F51;">
             <div class="right">
-                <h1>MTCNA</h1>
-                <h2>Certification</h2>
+                <div class="rtitle">
+                    <h1>MTCNA</h1>
+                    <h2>Certification</h2>
+                </div>
+                <p>I took the MTCNA (MikroTik Certified Network Associate) certification at IDN Boarding School Pamijahan Bogor on 18 November, 2024. And successfully passed and got the MTCNA certificate.</p>
             </div>
-
-            <p>I took the MTCNA (MikroTik Certified Network Associate) certification at IDN Boarding School Pamijahan Bogor on 18 November, 2024. And successfully passed and got the MTCNA certificate.</p>
             
             <div class="left">
                 <a href="#">See Details</a>
@@ -129,11 +151,12 @@
 
         <div class="exbox">
             <div class="right">
-                <h1>MTCRE</h1>
-                <h2>Certification</h2>
+                <div class="rtitle">
+                    <h1>MTCRE</h1>
+                    <h2>Certification</h2>
+                </div>
+                <p>I took the MTCRE (MikroTik Certified Routing Engineer) certification at IDN Boarding School Pamijahan Bogor on 9 Desember, 2024. And successfully passed and got the MTCRE certificate.</p>
             </div>
-
-            <p>I took the MTCRE (MikroTik Certified Routing Engineer) certification at IDN Boarding School Pamijahan Bogor on 9 Desember, 2024. And successfully passed and got the MTCRE certificate.</p>
             
             <div class="left">
                 <a href="#">See Details</a>
@@ -207,8 +230,8 @@
                 <img src="bahan/works/topologi2.png" alt="">
                 <div class="cardcon">
                     <div class="cardtle">
-                        <h1>Super LAB Switching</h1>
-                        <p>In this lab, i learn and make some Switching Configuration. </p>
+                        <h1>Super LAB OSPF</h1>
+                        <p>In this lab, i learn and make some Dynamic Routing OSPF Configuration. </p>
                     </div>
                     <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
@@ -251,5 +274,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
