@@ -252,7 +252,6 @@ nav button:hover{
 }
 
 .conhome h1{
-    animation: zoom 1s ease-in-out 0.5s forwards;
     color: #3BEAEA;
     font-size: 9rem;
     font-weight: 400;
@@ -282,16 +281,6 @@ nav button:hover{
     font-family: nohemi;
     font-size: 1.5rem;
     font-weight: 500;
-}
-
-@keyframes zoom {
-    0%{
-        transform: scale(0);
-    }
-
-    100%{
-        transform: scale(1);
-    }
 }
 
 @media (max-width: 700px) {
